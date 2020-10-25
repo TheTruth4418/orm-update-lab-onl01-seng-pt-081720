@@ -52,6 +52,7 @@ attr_reader :id
     self.id = row[0]
     self.name = row[1]
     self.grade = row[2]
+    self
   end
 
   def self.find_by_name(name)
