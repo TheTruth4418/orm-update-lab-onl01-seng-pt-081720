@@ -53,7 +53,6 @@ attr_accessor :name, :grade, :id
     student.name = row[1]
     student.grade = row[2]
     student
-    binding.pry
   end
 
   def self.find_by_name(name)
@@ -66,3 +65,4 @@ attr_accessor :name, :grade, :id
     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 end
+binding.pry
