@@ -48,10 +48,7 @@ attr_reader :id
   end
 
   def self.new_from_db(row)
-    self.new
-    self.id = row[0]
-    self.name = row[1]
-    self.grade = row[2]
+    self.new(row[0],row[1],row[2])
     self
   end
 
