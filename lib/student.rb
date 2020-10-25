@@ -14,7 +14,7 @@ attr_accessor :name, :grade, :id
     CREATE TABLE students (
       id INTEGER PRIMARY KEY,
       name TEXT,
-      grade TEXT
+      grade INTEGER
     )
     SQL
 
