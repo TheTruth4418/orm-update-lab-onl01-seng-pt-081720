@@ -52,6 +52,7 @@ attr_accessor :name, :grade, :id
     student.name = row[1]
     student.grade = row[2]
     student
+    binding.pry
   end
 
   def self.find_by_name(name)
