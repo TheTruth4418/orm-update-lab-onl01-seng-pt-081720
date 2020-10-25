@@ -48,11 +48,10 @@ attr_reader :id
   end
 
   def self.new_from_db(row)
-    self.new(id, name, grade)
+    self.new
     self.id = row[0]
     self.name = row[1]
     self.grade = row[2]
-
   end
 
   def self.find_by_name(name)
