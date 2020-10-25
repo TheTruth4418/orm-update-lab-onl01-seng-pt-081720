@@ -30,7 +30,7 @@ attr_reader :id
     if self.id
       self.update
     else
-      sql = <<-SQL 
+      sql = <<-SQL
         INSERT INTO students (name, grade)
         VALUES (?,?)
       SQL
@@ -52,7 +52,7 @@ attr_reader :id
     name = row[1]
     grade = row[2]
     self.new(id, name, grade)
-  end 
+  end
 
   def self.find_by_name(name)
     sql = "SELECT * FROM students WHERE name = ?"
