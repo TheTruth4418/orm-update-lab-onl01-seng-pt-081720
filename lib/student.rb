@@ -48,7 +48,7 @@ attr_reader :id
   end
 
   def self.new_from_db(row)
-    self.new(row[0],row[1],row[2])
+    self.new(row[1],row[2],row[0])
     self
   end
 
